@@ -1,0 +1,199 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tenis Kortu Admin Paneli</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- jQuery UI -->
+    <link href="https://code.jquery.com/ui/1.10.3/themes/redmond/jquery-ui.css" rel="stylesheet" media="screen">
+
+    <!-- Bootstrap -->
+    <link href="~/Areas/teniskortu/Content/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- styles -->
+    <link href="~/Areas/teniskortu/Content/css/styles.css" rel="stylesheet">
+
+
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <!-- Logo -->
+                    <div class="logo">
+                        <h1><a href="index.html">Hos Geldin Admin</a></h1>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="input-group form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-primary" type="button">Ara</button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="navbar navbar-inverse" role="banner">
+                        <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
+                            <ul class="nav navbar-nav">
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hesabim<b class="caret"></b></a>
+                                    <ul class="dropdown-menu animated fadeInUp">
+                                        <li><a href="profile.html">Profil</a></li>
+                                        <li><a href="login.html">Cikis Yap</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-content">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="sidebar content-box" style="display: block;">
+                    <ul class="nav">
+                        <!-- Main menu -->
+                        <li><a href="~/teniskortu/Home/Index"><i class="glyphicon glyphicon-home"></i>Ana Sayfa</a></li>
+                        <li><a href="/teniskortu/Home/calendar"><i class="glyphicon glyphicon-calendar"></i>Takvim</a></li>
+                        <li  class="current"><a href="/teniskortu/Home/tablo"><i class="glyphicon glyphicon-list"></i>Üyeler</a></li>
+                        <li><a href="/teniskortu/Home/kortlar"><i class="glyphicon glyphicon-list"></i>Kortlar</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-10">
+
+                <div class="col-md-12">
+                    <div class="content-box-large">
+                        <div class="panel-heading">
+                            <div class="panel-title col-lg-offset-4"><b>Kayitli Uye Bilgileri</b></div>
+
+                            <div class="panel-options">
+                                <a href="#" data-rel="collapse"><i class="glyphicon glyphicon-refresh"></i></a>
+                                <a href="#" data-rel="reload"><i class="glyphicon glyphicon-cog"></i></a>
+                            </div>
+                        </div>
+                        <div class="panel-body" style="width: 100%">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Ad Soyad</th>
+                                        <th>Telefon No</th>
+                                        <th>Adres</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @{ 
+                                            int i = 1;
+                                            foreach (var item in ViewBag.uye)
+                                            {
+                                                i++;
+                                        <tr class="success">
+                                            <td>@i</td>
+                                            <td>@item.</td>
+                                            <td>Otto</td>
+                                            <td>mdo kjh khjkhdfk khjhjkdfj kddhfhdkf</td>
+                                        </tr>
+                                        }
+                                    }
+                                    <tr class="danger">
+                                        <td>2</td>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>fat</td>
+                                    </tr>
+                                    <tr class="warning">
+                                        <td>3</td>
+                                        <td>Larry</td>
+                                        <td>the Bird</td>
+                                        <td>twitter</td>
+                                    </tr>
+                                    <tr class="success">
+                                        <td>4</td>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>mdo</td>
+                                    </tr>
+                                    <tr class="danger">
+                                        <td>5</td>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>fat</td>
+                                    </tr>
+                                    <tr class="warning">
+                                        <td>6</td>
+                                        <td>Larry</td>
+                                        <td>the Bird</td>
+                                        <td>twitter</td>
+                                    </tr>
+                                    <tr class="success">
+                                        <td>7</td>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>mdo</td>
+                                    </tr>
+                                    <tr class="danger">
+                                        <td>8</td>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>fat</td>
+                                    </tr>
+                                    <tr class="warning">
+                                        <td>9</td>
+                                        <td>Larry</td>
+                                        <td>the Bird</td>
+                                        <td>twitter</td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer style="margin-top:17px">
+        <div class="container">
+
+            <div class="copy text-center">
+                Yakup-Firat-Emre-Selim
+            </div>
+
+        </div>
+    </footer>
+
+    <link href="~/Areas/teniskortu/Content/vendors/datatables/dataTables.bootstrap.css" rel="stylesheet" media="screen" property="">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- jQuery UI -->
+    <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="~/Areas/teniskortu/Content/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="~/Areas/teniskortu/Content/vendors/datatables/js/jquery.dataTables.min.js"></script>
+
+    <script src="~/Areas/teniskortu/Content/vendors/datatables/dataTables.bootstrap.js"></script>
+
+    <script src="~/Areas/teniskortu/Content/js/custom.js"></script>
+    <script src="~/Areas/teniskortu/Content/js/tables.js"></script>
+</body>
+</html>

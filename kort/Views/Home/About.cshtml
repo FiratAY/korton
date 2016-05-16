@@ -1,0 +1,167 @@
+﻿@{ Layout = null;}
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tenis Kortu Projesi</title>
+    <meta name="description" content="Tenis Kortu Kiralama , Özel ders tenisle ilgili herşey" />
+    <meta name="keywords" content="tenis, tenis kort, özel ders, tenis dersleri, tenis kortu kiralama" />
+    <meta name="author" content="Codrops" />
+    <link rel="stylesheet" href="~/Content/bootstrap-3.3.6-dist/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="~/Content/bootstrap-3.3.6-dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="~/Content/css/style.css">
+    <link rel="stylesheet" href="~/Content/styles.css">
+    <link rel="stylesheet" href="~/Content/style/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- Parallax Css ve Js -->
+    <link rel="stylesheet" href="~/Content/parallax/css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="~/Content/parallax/css/style.css"> <!-- Resource style -->
+    <script src="~/Content/parallax/js/modernizr.js"></script> <!-- Modernizr -->
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="~/Content/js/parallax.min.js"></script>
+    <script src="~/Content/js/js.js"></script>
+
+</head>
+<body>
+
+    <img style="position: absolute ; max-width: 70px ; left: 100px ; top:0; z-index: 1; border-radius: 50% ; border-top: 3px solid white ; border-bottom: 3px solid black" src="/Content/img/logo1.png" alt="">
+
+
+    <div style="text-align: center">
+        <div id='cssmenu'>
+            <ul>
+                <li ><a href='/Home/Index'><span>AnaSayfa</span></a></li>
+                <li><a href='/rezervasyon/index'><span>Rezervasyon İşlemleri</span></a></li>
+                <li class='active'><a href='/Home/About'><span>Hakkımızda</span></a></li>
+                <li class='last'><a href='/Home/Contact'><span>İletişim</span></a></li>
+                @Html.Partial("_LoginPartial")
+            </ul>
+        </div>
+    </div>
+    <div class="hakkimizda">
+        <div class="container-fluid">
+            <br><br><br><br><br><br>
+            <h2>Hakkımızda</h2>
+            <br><br><br><br>
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <img class="img-responsive" src="http://www.harbourtrees.com/golf/emailer2020/img/harbourtrees/Tennis-Court-at-Sandy-Lane-Barbados__03.jpg" alt="resim1">
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <h5>Kort Kiralama</h5>
+                    <br>
+                    <p>
+                        &nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Cras dignissim vitae justo vitae dapibus. Morbi elit mi, condimentum quis tortor nec,
+                        eleifend laoreet ante. Morbi eu mi eleifend, vulputate urna ornare, ornare libero.
+                        Proin porttitor et urna ut rutrum. Aliquam erat massa, auctor quis lectus ac, hendrerit
+                        ullamcorper lorem. Suspendisse potenti.
+                        <br><br>
+                        &nbsp;Sed vel varius magna, nec hendrerit arcu. In scelerisque eleifend cursus.
+                        Donec et vulputate quam. Sed eu justo dui. Vestibulum egestas volutpat nisi.
+                        Sed euismod risus id condimentum rutrum. Aenean auctor lorem eros,
+                        ut efficitur lectus porttitor non. Ut arcu massa, pellentesque fringilla magna a,
+                        imperdiet semper tellus. Donec feugiat lacus a orci porta, vitae volutpat nibh rutrum.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <h5>Yetişkin/Çocuk Dersleri</h5>
+                    <br>
+                    <p>
+                        &nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Cras dignissim vitae justo vitae dapibus. Morbi elit mi, condimentum quis tortor nec,
+                        eleifend laoreet ante. Morbi eu mi eleifend, vulputate urna ornare, ornare libero.
+                        Proin porttitor et urna ut rutrum. Aliquam erat massa, auctor quis lectus ac, hendrerit
+                        ullamcorper lorem. Suspendisse potenti.
+                        <br><br>
+                        &nbsp;Sed vel varius magna, nec hendrerit arcu. In scelerisque eleifend cursus.
+                        Donec et vulputate quam. Sed eu justo dui. Vestibulum egestas volutpat nisi.
+                        Sed euismod risus id condimentum rutrum. Aenean auctor lorem eros,
+                        ut efficitur lectus porttitor non. Ut arcu massa, pellentesque fringilla magna a,
+                        imperdiet semper tellus. Donec feugiat lacus a orci porta, vitae volutpat nibh rutrum.
+                    </p>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <img class="img-responsive" src="http://www.pirec.org/wp-content/uploads/2013/02/tennis-balls-and-rackets.jpg" alt="resim1">
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <img class="img-responsive" src="http://static1.squarespace.com/static/54bfcc57e4b053c373fa0366/t/54c79d09e4b02724cc33b5a8/1422368011031/madinat-jumeirah-activities-pbi-tennis-hero.jpg?format=1500w" alt="resim1">
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <h5>Bilinmesi Gerekenler</h5>
+                    <br>
+                    <p>
+                        &nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Cras dignissim vitae justo vitae dapibus. Morbi elit mi, condimentum quis tortor nec,
+                        eleifend laoreet ante. Morbi eu mi eleifend, vulputate urna ornare, ornare libero.
+                        Proin porttitor et urna ut rutrum. Aliquam erat massa, auctor quis lectus ac, hendrerit
+                        ullamcorper lorem. Suspendisse potenti.
+                        <br><br>
+                        &nbsp;Sed vel varius magna, nec hendrerit arcu. In scelerisque eleifend cursus.
+                        Donec et vulputate quam. Sed eu justo dui. Vestibulum egestas volutpat nisi.
+                        Sed euismod risus id condimentum rutrum. Aenean auctor lorem eros,
+                        ut efficitur lectus porttitor non. Ut arcu massa, pellentesque fringilla magna a,
+                        imperdiet semper tellus. Donec feugiat lacus a orci porta, vitae volutpat nibh rutrum.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+    </div>
+
+    <div class="footer">
+        <div class="container-fluid" style="text-align: center">
+            <br><br><br>
+            <div class="col-md-4">
+                <span>Adres</span>
+                <br><br><br>
+                <b>
+                    IceTheme, Inc.Yigir Sok. ,Coruh ev. ,A Blok ,Daire:1<br>
+                    P: (123) 456-7890 <br>
+                    E-mail :<a href="mailto:#">&nbsp;&nbsp;&nbsp;selim@gmail.com</a>
+                </b>
+
+            </div>
+            <div class="col-md-4">
+                <span>Abone Ol</span>
+                <br><br><br>
+                <input type="text" placeholder="Abone Ol" />
+            </div>
+            <div class="col-md-4">
+                <span>Sosyal Medya</span>
+                <br><br>
+                <div class="col-md-6">
+                    <div id="face"><i class="fa fa-facebook"></i></div>
+                    <p>Facebook</p>
+                </div>
+                <div class="col-md-6">
+                    <div id="twit"><i class="fa fa-twitter"></i></div>
+                    <p>Twitter</p>
+                </div>
+                <div class="col-md-6" style="margin-top: 30px">
+                    <div id="ins"><i class="fa fa-instagram"></i></div>
+                    <p>İnstagram</p>
+                </div>
+                <div class="col-md-6" style="margin-top: 30px">
+                    <div id="you"><i class="fa fa-youtube"></i></div>
+                    <p>Youtube</p>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
